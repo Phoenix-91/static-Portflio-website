@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix-91-</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">LOGO</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="content">
+                    <h1>Hey,I am Phoenix, A Web-Developer</h1>
+                    <p>Creating beautiful, functional, and user-centered digital experiences
+        
+                    </p>
+                    <br>
+                    <a href="#contact" class="cta-button">Get in touch <span class="arrow">→</span></a>
+                </div>
+                <div class="image">
+                    <img src="asset/fatigued-developer-working-overnight-home-rubbing-eyes-while-taking-break.jpg" alt="MY PIC">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>My Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive and visually appealing user interfaces</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Building responsive and performant web applications</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Brand Identity</h3>
+                        <p>Crafting unique and memorable brand experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <p>React</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="asset/1.jpg" alt="E-commerce Website">
+                        <div class="overlay">
+                            <h3>E-commerce Website</h3>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="asset/2.jpg" alt="Mobile Banking App">
+                        <div class="overlay">
+                            <h3>Mobile Banking App</h3>
+                            <p>UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="asset/3.jpg" alt="Social Media Dashboard">
+                        <div class="overlay">
+                            <h3>Social Media Dashboard</h3>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="asset/4.jpg" alt="Fitness Tracking App">
+                        <div class="overlay">
+                            <h3>Fitness Tracking App</h3>
+                            <p>UI/UX Design</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Phoenix-91. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
